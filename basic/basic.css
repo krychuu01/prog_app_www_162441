@@ -56,7 +56,7 @@ nav {
 }
 
 .nav-item {
-    border-right: 2px dashed black;
+    border-right: 2px dotted black;
     width: 120px;
     padding: 10px 20px;
     line-height: 60px;
@@ -64,14 +64,14 @@ nav {
     display: inline;
 }
 
-.nav-item:last-child {
-    border-right: none;
-}
-
-.nav-item:hover{
+.nav-item:hover {
+    background-color: rgb(67, 109, 187);
     color:gold;
 }
 
+.nav-item:last-child {
+    border-right: none;
+}
 
 a {
     text-decoration: none;
