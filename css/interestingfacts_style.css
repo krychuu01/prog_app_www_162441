@@ -1,0 +1,12 @@
+ol {
+  margin-top: 40px;
+  list-style-type: upper-roman;
+}
+
+li {
+  line-height: 35px;
+}
+
+a {
+  color: pink;
+}
