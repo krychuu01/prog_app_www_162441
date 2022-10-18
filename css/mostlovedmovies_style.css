@@ -1,7 +1,9 @@
 table {
   width: 70%;
   border: 2px solid black;
+  color: black;
   margin-top: 30px;
+  background-image: url(../img/mostlovedmovies/oscars-table-background.jpg);
 }
 
 #movies-table th {
@@ -21,24 +23,23 @@ table {
 
 #movies-table tr.first {
   background: rgb(254,255,103);
-  background: linear-gradient(147deg, rgba(254,255,103,1) 31%, rgba(234,255,58,1) 88%);
+  background: radial-gradient(circle, rgba(254,255,103,0.69) 31%, rgba(234,255,58,1) 88%);
   color: black;
 }
 
 #movies-table tr.second {
-  background: rgb(211,219,228);
-  background: radial-gradient(circle, rgba(211,219,228,1) 31%, rgba(149,163,180,1) 88%);
+  background: radial-gradient(circle, rgba(211,219,228,0.69) 31%, rgba(149,163,180,1) 88%);
   color: black;
 }
 
 #movies-table tr.third {
   background: rgb(254,255,103);
-  background: linear-gradient(147deg, rgba(254,255,103,1) 0%, rgba(234,255,58,1) 39%, rgba(214,255,7,1) 75%);
+  background: radial-gradient(circle, rgba(226,82,60,0.69) 31%, rgba(198,96,22,1) 88%);
   color: black;
 }
 
-#movies-table tr:nth-child(even) {
-  background-color: rgb(82, 134, 231);
+#movies-table tr{
+  background-color: rgba(82, 134, 231, 0.69);
 }
 
 #movies-table td {
@@ -46,6 +47,7 @@ table {
   border: 1px solid black;
 }
 
-#movies-table tr #first {
-  background-color: purple;
+caption {
+  color: aliceblue;
+  font-weight: bold;
 }
