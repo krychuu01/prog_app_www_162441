@@ -3,10 +3,6 @@ ol {
   list-style-type: upper-roman;
 }
 
-li {
-  line-height: 35px;
-}
-
-a {
-  color: pink;
+li a {
+  font-size: 300px;
 }
