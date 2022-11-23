@@ -8,6 +8,7 @@
     if($_GET['idp'] == 'mostrewardedactors') $page = '../html/mostrewardedactors.html';
     if($_GET['idp'] == 'oscars2022') $page = '../html/oscars2022.html';
     if($_GET['idp'] == 'worstmoviesroles') $page = '../html/worstmoviesroles.html';
+    if($_GET['idp'] == 'films') $page = '../html/films.html';
 
 ?>
 
@@ -42,6 +43,7 @@
                 <li class="nav-item"> <a href="?idp=mostrewardedactors" class="nav-link">Most rewarded actors</a> </li>
                 <li class="nav-item"> <a href="?idp=worstmoviesroles" class="nav-link">Worst movies/roles</a> </li>
                 <li class="nav-item"> <a href="?idp=interestingfacts" class="nav-link">Interesting facts</a> </li>
+                <li class="nav-item"> <a href="?idp=films" class="nav-link">Films</a> </li>
             </ul>
         </nav>
 
@@ -61,7 +63,7 @@
     ?>
 
 
-    <div class="identifier" style="margin-top:30px; font-size: 25px; color: gold;>
+        <div class="identifier" style="margin-top:30px; font-size: 25px; color: gold;">
 
     
         <?php
