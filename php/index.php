@@ -1,14 +1,16 @@
 <?php
 
+    include('cfg.php');
+    include('showpage.php');
     error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 
-    if($_GET['idp'] == 'main') $page = '../html/main.html';
-    if($_GET['idp'] == 'interestingfacts') $page = '../html/interestingfacts.html';
-    if($_GET['idp'] == 'mostlovedmovies') $page = '../html/mostlovedmovies.html';
-    if($_GET['idp'] == 'mostrewardedactors') $page = '../html/mostrewardedactors.html';
-    if($_GET['idp'] == 'oscars2022') $page = '../html/oscars2022.html';
-    if($_GET['idp'] == 'worstmoviesroles') $page = '../html/worstmoviesroles.html';
-    if($_GET['idp'] == 'films') $page = '../html/films.html';
+    if($_GET['idp'] == 'main') $page = 1;
+    if($_GET['idp'] == 'interestingfacts') $page = 3;
+    if($_GET['idp'] == 'mostlovedmovies') $page = 4;
+    if($_GET['idp'] == 'mostrewardedactors') $page = 5;
+    if($_GET['idp'] == 'oscars2022') $page = 6;
+    if($_GET['idp'] == 'worstmoviesroles') $page = 7;
+    if($_GET['idp'] == 'films') $page = 8;
 
 ?>
 
@@ -54,11 +56,7 @@
 
     <?php
 
-        if(!file_exists($page)) {
-            echo "Page {$page} doesn't exists!";
-        }
-
-        include($page);
+        showPage($link, $page);
 
     ?>
 
