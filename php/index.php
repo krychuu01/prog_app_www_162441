@@ -1,7 +1,10 @@
 <?php
 
-    include('cfg.php');
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "/moj_projekt";
     include('showpage.php');
+    include('../admin/admin.php');
+    include_once('../admin/loginform.php');
     error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 
     if($_GET['idp'] == 'main') $page = 1;
@@ -11,6 +14,7 @@
     if($_GET['idp'] == 'oscars2022') $page = 6;
     if($_GET['idp'] == 'worstmoviesroles') $page = 7;
     if($_GET['idp'] == 'films') $page = 8;
+    if($_GET['idp'] == 'loginpage') $page = 9;
 
 ?>
 
@@ -46,6 +50,7 @@
                 <li class="nav-item"> <a href="?idp=worstmoviesroles" class="nav-link">Worst movies/roles</a> </li>
                 <li class="nav-item"> <a href="?idp=interestingfacts" class="nav-link">Interesting facts</a> </li>
                 <li class="nav-item"> <a href="?idp=films" class="nav-link">Films</a> </li>
+                <li class="nav-item"> <a href="?idp=loginpage" class="nav-link">Login</a> </li>
             </ul>
         </nav>
 
@@ -56,7 +61,9 @@
 
     <?php
 
-        showPage($link, $page);
+        showPage(getLink(), $page);
+        // pageList($link);
+        editPage();
 
     ?>
 
