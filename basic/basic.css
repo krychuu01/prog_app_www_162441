@@ -72,7 +72,6 @@ header {
 #clock {
     font-family: "DigitalNumbers";
     font-size: 55px;
-    margin-top: 15px;
     background-color: rgba(26, 26, 26, 0.863);
     padding: 10px 10px;
     text-align: center;
@@ -101,6 +100,10 @@ nav {
     line-height: 50px;
     font-size: 20px;
     display: inline;
+}
+
+.nav-link {
+    display: inherit;
 }
 
 .nav-item:hover {
@@ -135,4 +138,3 @@ footer p{
 footer p:first-child {
     margin-right: 20px;
 }
-
